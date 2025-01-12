@@ -262,6 +262,9 @@ background: transparent;
 .services{
     background: var(--bg-color);
 }
+.skills{
+    background: var(--bg-color);
+}
 .projects{
     background: #101010;
 	width: 100%;
