@@ -101,12 +101,14 @@ section{
     height: 100vh;
     width: 100%;
     background: url(img4.jpeg);
+    justify-content: space-between;
     background-size: cover;
     background-position: center;
     position: relative;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(1,1fr);
     align-items: center;
+    gap: 20px;
 }
 .home-text h1{
     margin: 20px 0px 20px;
@@ -154,6 +156,12 @@ section{
 	background-color: #191919;
 } */
 .about-img img{
+	height: auto;
+	width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.about-img-details img{
 	height: auto;
 	width: 500px;
     max-width: 100%;
@@ -234,6 +242,9 @@ header.sticky{
     letter-spacing: 2px;
 }
 .about-img:hover{
+    transform: scale(1.1);
+}
+.about-img-details:hover{
     transform: scale(1.1);
 }
 .about-text p{
@@ -625,7 +636,16 @@ background: transparent;
         text-align: center;
         margin-bottom: 30px;
     }
+    .about-img-details{
+        text-align: center;
+        margin-bottom: 30px;
+    }
     .about-img img{
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+    .about-img-details img{
         max-width: 100%;
         width: 700px;
         height: auto;
