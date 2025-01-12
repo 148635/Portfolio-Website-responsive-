@@ -15,6 +15,7 @@
     --second-color:#c6c9d8bf;
     --main-color:#f9004d;
     --big-font:5.3rem;
+    --next-big-font:3.5rem;
     --h2-font:4.2rem;
     --p-font:1.1rem;
 }
@@ -112,7 +113,7 @@ section{
 }
 .home-text h1{
     margin: 20px 0px 20px;
-    font-size: var(--big-font);
+    font-size: var(--next-big-font);
 }
 .home-text h3{
     font-size: 25px;
@@ -592,6 +593,7 @@ background: transparent;
     }
     :root{
         --big-font:4.8rem;
+	--next-big-font:3.5rem;
         --h2-font:3.8rem;
         --p-font:1rem;
         transition: .2s;
