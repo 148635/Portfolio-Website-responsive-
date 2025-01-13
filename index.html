@@ -188,6 +188,16 @@
         menu.classList.remove('bx-x');
         navbar.classList.remove('active');
         }
+        function openGmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email) {
+                const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+                window.open(mailtoLink, '_blank');
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
     </script>
 </body>
 </html>
