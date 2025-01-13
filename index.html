@@ -190,13 +190,16 @@
         }
         function openGmail(event) {
             event.preventDefault();
-            const email = document.getElementById('email').value;
-            if (email) {
-                const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
-                window.open(mailtoLink, '_blank');
-            } else {
-                alert('Please enter a valid email address.');
-            }
+            const userEmail = document.getElementById('email').value;
+            if (userEmail) {
+            const recipientEmail = 'myportfoliosubscribers@gmail.com'; // Replace with your email
+            const subject = 'Nice to have you onboard!';
+            const body = 'Body of the email';
+            const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&tf=1&replyTo=${encodeURIComponent(userEmail)}`;
+            window.open(mailtoLink, '_blank');
+        } else {
+            alert('Please enter a valid email address.');
+        }
         }
     </script>
 </body>
